@@ -1,0 +1,49 @@
+<!--Name: Jocelyn Dupuis-->
+<!--File: app.component.html-->
+<!--Date: 10/26/2023-->
+<!--Description: html component file for composer app - exercise 2.4-->
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <!--unordered list-->
+  <ul class="navbar-nav">
+
+    <!--components linked to nav links-->
+    <!--routerLink directive-->
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+<!--main container body-->
+<div class="container">
+  <br /> <br />
+
+  <!--h2-->
+  <h2>{{ assignment }}</h2>
+
+  <br /> <br />
+  <div class="row">
+    <div class="col-sm-12">
+
+        <!--router outlet-->
+        <router-outlet></router-outlet>
+
+    </div>
+  </div>
+
+</div>
+

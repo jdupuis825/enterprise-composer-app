@@ -1,0 +1,43 @@
+<!--Name: Jocelyn Dupuis-->
+<!--File: composer-list.component.html-->
+<!--Date: 11/07/2023-->
+<!--Description: html file for composer list in composer app - exercise 4.3-->
+
+
+
+<div class="row">
+
+  <div class="col-sm-12">
+
+    <!--text search field-->
+    <div class="textSearch">
+      <input type="text" id="txtSearch" class="form-control" placeholder="Search by name" [formControl]="txtSearchControl" />
+    </div>
+
+    <!--table for composer details-->
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <!--table head for composer name and genre-->
+          <th scope="col">Composer ID</th>
+          <th scope="col">Full name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <!--displays composer info from composer list component-->
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <td scope="row">
+            <a routerLink="/composer-details/{{ composer.composerId }}">
+              {{ composer.composerId }}
+            </a>
+          <td scope="row">{{ composer.fullName }}</td>
+          <td>{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,23 @@
+<!--Name: Jocelyn Dupuis-->
+<!--File: composer-details.component.html-->
+<!--Date: 11/07/2023-->
+<!--Description: html file for composer details in composer app - exercise 3.2-->
+
+
+<!--for field values of composer list-->
+<div class="row">
+
+    <div class="col-sm-12">
+
+      <ul class="list-group">
+
+        <!--list items and able to access values-->
+        <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+        <li class="list-group-item">Full name: {{ composer.fullName }}</li>
+        <li class="list-group-item">Genre: {{ composer.genre }}</li>
+      </ul>
+      <br />
+      <!--anchor tag with routerLink to return users back to composer list-->
+      <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+    </div>
+</div>

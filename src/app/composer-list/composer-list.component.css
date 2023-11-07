@@ -1,0 +1,17 @@
+/**
+    Name: Jocelyn Dupuis
+    File: composer-list.component.css
+    Date: 11/07/2023
+    Description: Styles for composer list component
+*/
+
+/** styling for search field */
+.textSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 5px;
+}
+
+thead {
+  background-color: black;
+}

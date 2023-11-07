@@ -1,0 +1,23 @@
+/**
+    Name: Jocelyn Dupuis
+    File: contact.component.css
+    Date: 10/27/2023
+    Description: Styles for contact component
+*/
+
+
+/**styling for location element*/
+.location {
+  text-align: center;
+}
+
+/**styling for title*/
+.contact-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/**styling for container*/
+.contact-container {
+  width: 100%;
+}

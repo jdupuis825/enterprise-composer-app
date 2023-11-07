@@ -1,0 +1,12 @@
+/**
+    Name: Jocelyn Dupuis
+    File: about.component.css
+    Date: 10/27/2023
+    Description: Styles for about component
+*/
+
+/**styling for composer name*/
+.composer-name {
+  text-align: center;
+  font-weight: bold;
+}

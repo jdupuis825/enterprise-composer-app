@@ -1,0 +1,12 @@
+/**
+    Name: Jocelyn Dupuis
+    File: composer-details.component.css
+    Date: 11/07/2023
+    Description: Styles for composer details component
+*/
+
+
+/** styling for anchor tag*/
+a {
+  float: right;
+}
